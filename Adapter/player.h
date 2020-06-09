@@ -19,7 +19,10 @@ protected:
 class Forwards : public Player
 {
 public:
-    Forwards(string name) : m_name(name) { }
+    Forwards(string name)
+    {
+        m_name = name;
+    }
     void Attack()
     {
         cout << "前锋" << m_name << "进攻" << endl;
@@ -28,14 +31,15 @@ public:
     {
         cout << "前锋" << m_name << "防守" << endl;
     }
-private:
-    string m_name;
 };
 
 class Center : public Player
 {
 public:
-    Center(string name) : m_name(name) { }
+    Center(string name)
+    {
+        m_name = name;
+    }
     void Attack()
     {
         cout << "中锋" << m_name << "进攻" << endl;
@@ -44,14 +48,15 @@ public:
     {
         cout << "中锋" << m_name << "防守" << endl;
     }
-private:
-    string m_name;
 };
 
 class Guards : public Player
 {
 public:
-    Guards(string name) : m_name(name) { }
+    Guards(string name)
+    {
+        m_name = name;
+    }
     void Attack()
     {
         cout << "后卫" << m_name << "进攻" << endl;
@@ -60,8 +65,6 @@ public:
     {
         cout << "后卫" << m_name << "防守" << endl;
     }
-private:
-    string m_name;
 };
 
 
